@@ -1,43 +1,48 @@
 # depslib dependency file v1.0
-1538254079 source:c:\users\carlos ramalho\documents\github\matrizesparsa\pmatrizesesparsas\main.cpp
+1538268010 source:c:\users\carlos ramalho\documents\github\matrizesparsa\pmatrizesesparsas\main.cpp
 	<iostream>
 	"ArvoreAVL.h"
+	"MatrizEsparsa.h"
 	"No.h"
 
-1538253049 source:c:\users\carlos ramalho\documents\github\matrizesparsa\pmatrizesesparsas\src\no.cpp
+1538267675 source:c:\users\carlos ramalho\documents\github\matrizesparsa\pmatrizesesparsas\src\no.cpp
 	"No.h"
 	<iostream>
 	<string.h>
 	<stdio.h>
 
-1538253054 c:\users\carlos ramalho\documents\github\matrizesparsa\pmatrizesesparsas\include\no.h
+1538267788 c:\users\carlos ramalho\documents\github\matrizesparsa\pmatrizesesparsas\include\no.h
 	<iostream>
 	"../src/No.cpp"
 
-1538253049 c:\users\carlos ramalho\documents\github\matrizesparsa\pmatrizesesparsas\src\no.cpp
+1538267675 c:\users\carlos ramalho\documents\github\matrizesparsa\pmatrizesesparsas\src\no.cpp
 	"No.h"
 	<iostream>
 	<string.h>
 	<stdio.h>
 
-1538253989 source:c:\users\carlos ramalho\documents\github\matrizesparsa\pmatrizesesparsas\src\arvoreavl.cpp
+1538267933 source:c:\users\carlos ramalho\documents\github\matrizesparsa\pmatrizesesparsas\src\arvoreavl.cpp
 	"ArvoreAVL.h"
 	<iostream>
 	<string.h>
 
-1538253470 c:\users\carlos ramalho\documents\github\matrizesparsa\pmatrizesesparsas\include\arvoreavl.h
+1538268180 c:\users\carlos ramalho\documents\github\matrizesparsa\pmatrizesesparsas\include\arvoreavl.h
 	"No.h"
 	<iostream>
 	"../src/ArvoreAVL.cpp"
 
-1538253989 c:\users\carlos ramalho\documents\github\matrizesparsa\pmatrizesesparsas\src\arvoreavl.cpp
+1538267933 c:\users\carlos ramalho\documents\github\matrizesparsa\pmatrizesesparsas\src\arvoreavl.cpp
 	"ArvoreAVL.h"
 	<iostream>
 	<string.h>
 
-1538254122 source:c:\users\carlos ramalho\documents\github\matrizesparsa\pmatrizesesparsas\src\matrizesparsa.cpp
+1538265885 source:c:\users\carlos ramalho\documents\github\matrizesparsa\pmatrizesesparsas\src\matrizesparsa.cpp
 	"MatrizEsparsa.h"
 
-1538254534 c:\users\carlos ramalho\documents\github\matrizesparsa\pmatrizesesparsas\include\matrizesparsa.h
+1538263994 c:\users\carlos ramalho\documents\github\matrizesparsa\pmatrizesesparsas\include\matrizesparsa.h
 	"ArvoreAVL.h"
+	"../src/MatrizEsparsa.cpp"
+
+1538265885 c:\users\carlos ramalho\documents\github\matrizesparsa\pmatrizesesparsas\src\matrizesparsa.cpp
+	"MatrizEsparsa.h"
 

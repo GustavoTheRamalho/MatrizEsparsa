@@ -2,26 +2,28 @@
 #define MATRIZESPARSA_H
 #include "ArvoreAVL.h"
 
+template<class T>
 class MatrizEsparsa
 {
     public:
-        MatrizEsparsa(int, int, int);
+        MatrizEsparsa<T>(T, int, int);
 
-        int getDado(int, int);
+        T get(int, int);
         int getLinhas();
         int getColunas();
 
-        void setDado(int, int);
+        void put(T, int, int);
     protected:
 
     private:
-        ArvoreAVL<ArvoreAVL<int>> *linha;
+        ArvoreAVL<ArvoreAVL<T>*> *linhas;
         int lins;
         int cols;
-        int valorPadrao;
+        T valorPadrao;
 
 
 
 };
 
+#include "../src/MatrizEsparsa.cpp"
 #endif // MATRIZESPARSA_H

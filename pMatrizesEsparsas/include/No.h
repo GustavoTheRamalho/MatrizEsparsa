@@ -29,7 +29,12 @@ class No
 
         char* toString();
 
-        friend ostream &operator<<(ostream& out, const No<T>& no);
+        friend ostream &operator<<(ostream& out, const No<T>& no)
+        {
+            out << no.info;
+            return out;
+        }
+
 
 
 

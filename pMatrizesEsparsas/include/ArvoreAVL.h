@@ -12,11 +12,21 @@ class ArvoreAVL
         void incluir(int, T info);
 
         void remover(int);
+
+        int existe(int);
+
+        T get(int);
+
         int altura();
         char* toString();
         char* toStringPorNvl();
         void test();
 
+        friend ostream &operator<<(ostream& out, const ArvoreAVL<T>& avl)
+        {
+            out << avl.toString();
+            return out;
+        }
 
 
 
@@ -25,13 +35,14 @@ class ArvoreAVL
         void incluir(T, No<T>*, No<T>*);
         int altura(No<T>*);
 
-        No<T> *menorDaDireita();
 
-        No<T> getMaior(No<T> *ptr);
-        No<T> getMenor(No<T> *ptr);
+
+        No<T>* getMaior(No<T> *ptr);
+        No<T>* getMenor(No<T> *ptr);
 
         void printaNo(No<T>*, char*);
         void printaPorNvl(No<T> *ptr, char**, int);
+
 
         No<T>* raiz;
 

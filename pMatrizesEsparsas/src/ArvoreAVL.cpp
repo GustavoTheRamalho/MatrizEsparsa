@@ -68,10 +68,11 @@ void ArvoreAVL<T>::remover(int chave)
 
     if (atual->ehFolha())
     {
-        if (anterior->getEsq() == atual)
-            anterior->setEsq(NULL);
-        else
-            anterior->setDir(NULL);
+        if (anterior != NULL)
+            if (anterior->getEsq() == atual)
+                anterior->setEsq(NULL);
+            else
+                anterior->setDir(NULL);
 
         delete atual;
 
@@ -206,7 +207,7 @@ void ArvoreAVL<T>::printaPorNvl(No<T>* ptr, char** buff, int nvl)
 }
 
 template <class T>
-No<T> ArvoreAVL<T>::getMaior(No<T>* ptr)
+No<T>* ArvoreAVL<T>::getMaior(No<T>* ptr)
 {
     No<T>* atual = ptr;
     No<T>* anterior = NULL;
@@ -222,7 +223,7 @@ No<T> ArvoreAVL<T>::getMaior(No<T>* ptr)
 
 
 template <class T>
-No<T> ArvoreAVL<T>::getMenor(No<T>* ptr)
+No<T>* ArvoreAVL<T>::getMenor(No<T>* ptr)
 {
     No<T>* atual = ptr;
     No<T>* anterior = NULL;
@@ -337,8 +338,40 @@ void ArvoreAVL<T>::rotacionarDuplaDir(No<T>* ptr, No<T>* ant)
 }
 
 
+template <class T>
+int ArvoreAVL<T>::existe(int chave)
+{
+    No<T>* atual = this->raiz;
 
+    while (atual != NULL)
+        if (atual->getChave() == chave)
+            return 1;
+        else
+        if (atual->getChave() > chave)
+            atual = atual->getEsq();
+        else
+            atual = atual->getDir();
 
+    return 0;
+}
+
+template<class T>
+T ArvoreAVL<T>::get(int chave)
+{
+    No<T>* atual = this->raiz;
+
+    while (atual != NULL)
+        if (atual->getChave() == chave)
+            return atual->getInfo();
+        else
+        if (atual->getChave() > chave)
+            atual = atual->getEsq();
+        else
+            atual = atual->getDir();
+
+    return NULL;
+
+}
 
 
 

@@ -1,5 +1,6 @@
 #include <iostream>
 #include "ArvoreAVL.h"
+#include "MatrizEsparsa.h"
 #include "No.h"
 
 
@@ -10,35 +11,40 @@ int main()
     ArvoreAVL<int> *arv = new ArvoreAVL<int>();
 
 
-/*
-    arv->incluir(2);
+
+    arv->incluir(2, 2);
     //arv->test();
-    arv->incluir(3);
+    arv->incluir(3, 3);
     //arv->test();
-    arv->incluir(1);
+    arv->incluir(1, 1);
     //arv->test();
-    arv->incluir(4);
+    arv->incluir(4, 4);
     //arv->test();
-    arv->incluir(0);
+    arv->incluir(0, 0);
     //arv->test();
-    arv->incluir(-1);
+    arv->incluir(-1, -1);
     arv->test();
+
+
+/*
+    MatrizEsparsa<int>* mat = new MatrizEsparsa<int>(0, 100, 100);
+    mat->put(1, 10, 10);
+    mat->put(9, 30, 40);
+    mat->put(1, 80, 90);
+    mat->put(4, 10, 15);
+  //  mat->put(0, 80, 90);
+
+    for (int i=0; i<100; i++)
+    {
+        for (int j = 0; j<100; j++)
+            printf("%d", mat->get(i, j));
+        printf("\n");
+    }
+
 
 */
 
-
-    arv->incluir(5,5);
-    arv->incluir(11,8);
-    arv->incluir(8,11);
-    arv->incluir(12,12);
-    arv->incluir(13,13);
-    arv->test();
-
-
-
-    cout << '\n' << arv->toStringPorNvl() << endl;
-
-
+    cout << *arv << endl;
 
 
 
