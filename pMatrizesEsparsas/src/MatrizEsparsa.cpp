@@ -40,11 +40,22 @@ void MatrizEsparsa<T>::put(T info, int i, int j)
      {
           ArvoreAVL<T> *coluna = linhas->get(i);
 
-          if (coluna->existe(j))
+          int existe = coluna->existe(j);
+
+          if (existe && info == valorPadrao)
+          {
               coluna->remover(j);
 
-          if (info != valorPadrao)
+              if (coluna->altura() == 0)
+                linhas->remover(i);
+          }
+          else
+          if (existe && info != valorPadrao)
+              coluna->setInfo(j, info);
+          else
+          if (!existe && info != valorPadrao)
               coluna->incluir(j, info);
+
      }
 }
 

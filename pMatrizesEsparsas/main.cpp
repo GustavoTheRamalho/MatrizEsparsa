@@ -8,43 +8,23 @@ using namespace std;
 
 int main()
 {
-    ArvoreAVL<int> *arv = new ArvoreAVL<int>();
 
 
+    MatrizEsparsa<int>* mat = new MatrizEsparsa<int>(0, 20, 20);
 
-    arv->incluir(2, 2);
-    //arv->test();
-    arv->incluir(3, 3);
-    //arv->test();
-    arv->incluir(1, 1);
-    //arv->test();
-    arv->incluir(4, 4);
-    //arv->test();
-    arv->incluir(0, 0);
-    //arv->test();
-    arv->incluir(-1, -1);
-    arv->test();
-
+    mat->put(1, 10, 10);
+    mat->put(2, 12, 12);
+    mat->put(3, 13, 13);
+    mat->put(0, 13, 13);
 
 /*
-    MatrizEsparsa<int>* mat = new MatrizEsparsa<int>(0, 100, 100);
-    mat->put(1, 10, 10);
-    mat->put(9, 30, 40);
-    mat->put(1, 80, 90);
-    mat->put(4, 10, 15);
-  //  mat->put(0, 80, 90);
-
-    for (int i=0; i<100; i++)
+    for (int i=0; i<20; i++)
     {
-        for (int j = 0; j<100; j++)
+        for (int j = 0; j<20; j++)
             printf("%d", mat->get(i, j));
         printf("\n");
-    }
+    }*/
 
-
-*/
-
-    cout << *arv << endl;
 
 
 

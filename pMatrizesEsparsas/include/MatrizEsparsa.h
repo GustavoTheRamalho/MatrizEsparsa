@@ -8,11 +8,13 @@ class MatrizEsparsa
     public:
         MatrizEsparsa<T>(T, int, int);
 
+        void put(T, int, int);
         T get(int, int);
+
         int getLinhas();
         int getColunas();
 
-        void put(T, int, int);
+
     protected:
 
     private:

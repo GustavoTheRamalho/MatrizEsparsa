@@ -46,3 +46,51 @@
 1538265885 c:\users\carlos ramalho\documents\github\matrizesparsa\pmatrizesesparsas\src\matrizesparsa.cpp
 	"MatrizEsparsa.h"
 
+1544056851 source:c:\users\carlo\onedrive\documentos\github\matrizesparsa\pmatrizesesparsas\src\arvoreavl.cpp
+	"ArvoreAVL.h"
+	<iostream>
+	<string.h>
+
+1544057840 c:\users\carlo\onedrive\documentos\github\matrizesparsa\pmatrizesesparsas\include\arvoreavl.h
+	"No.h"
+	<iostream>
+	"../src/ArvoreAVL.cpp"
+
+1543773118 c:\users\carlo\onedrive\documentos\github\matrizesparsa\pmatrizesesparsas\include\no.h
+	<iostream>
+	"../src/No.cpp"
+
+1543773118 c:\users\carlo\onedrive\documentos\github\matrizesparsa\pmatrizesesparsas\src\no.cpp
+	"No.h"
+	<iostream>
+	<string.h>
+	<stdio.h>
+
+1544056851 c:\users\carlo\onedrive\documentos\github\matrizesparsa\pmatrizesesparsas\src\arvoreavl.cpp
+	"ArvoreAVL.h"
+	<iostream>
+	<string.h>
+
+1544056703 source:c:\users\carlo\onedrive\documentos\github\matrizesparsa\pmatrizesesparsas\src\matrizesparsa.cpp
+	"MatrizEsparsa.h"
+
+1544058142 c:\users\carlo\onedrive\documentos\github\matrizesparsa\pmatrizesesparsas\include\matrizesparsa.h
+	"ArvoreAVL.h"
+	<iostream>
+	"../src/MatrizEsparsa.cpp"
+
+1544056703 c:\users\carlo\onedrive\documentos\github\matrizesparsa\pmatrizesesparsas\src\matrizesparsa.cpp
+	"MatrizEsparsa.h"
+
+1543773118 source:c:\users\carlo\onedrive\documentos\github\matrizesparsa\pmatrizesesparsas\src\no.cpp
+	"No.h"
+	<iostream>
+	<string.h>
+	<stdio.h>
+
+1544058023 source:c:\users\carlo\onedrive\documentos\github\matrizesparsa\pmatrizesesparsas\main.cpp
+	<iostream>
+	"ArvoreAVL.h"
+	"MatrizEsparsa.h"
+	"No.h"
+

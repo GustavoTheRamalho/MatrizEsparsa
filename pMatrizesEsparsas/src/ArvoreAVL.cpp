@@ -370,6 +370,21 @@ T ArvoreAVL<T>::get(int chave)
             atual = atual->getDir();
 
     return NULL;
+}
+
+template<class T>
+void ArvoreAVL<T>::setInfo(int chave, T info)
+{
+    No<T>* atual = this->raiz;
+
+    while(atual != NULL)
+        if (atual->getChave() == chave)
+            atual->setInfo(info);
+        else
+        if (atual->getChave() > chave)
+            atual = atual->getEsq();
+        else
+            atual = atual->getDir();
 
 }
 

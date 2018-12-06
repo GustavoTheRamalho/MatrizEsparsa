@@ -16,15 +16,16 @@ class ArvoreAVL
         int existe(int);
 
         T get(int);
+        void setInfo(int, T);
 
         int altura();
         char* toString();
         char* toStringPorNvl();
         void test();
 
-        friend ostream &operator<<(ostream& out, const ArvoreAVL<T>& avl)
+        friend ostream &operator<<(ostream& out,  ArvoreAVL<T>& avl)
         {
-            out << avl.toString();
+            out << avl.toStringPorNvl();
             return out;
         }
 
